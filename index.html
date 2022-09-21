@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="https://kit.fontawesome.com/4260b1972b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <header>
+      <h1 id="titulo">Instructivo de control de instalación</h1>
+      <p>Este formulario es una guía de instrucciones para que usted pueda controlar, de manera propia y ayudándonos a
+        nosotros, la calidad de instalación que recibió en su domicilio, contemplando todos los parámetros exigidos por
+        la ley.</p>
+    </header>
+
+    <form id="formulario">
+      <div class="mb-3">
+        <h6>1) Control de ingreso</h6>
+        <!-- <img src="./img/foto1.jpg" class="img-thumbnail" alt="Foto ilustrativa del cable de red"> -->
+        <p>
+          Para comenzar, por favor, visualice el ingreso del cable de red color negro. Tome una foto del mismo como lo
+          indica la imagen de arriba.</p>
+        <label for="exampleFile">Por favor tome una foto a continuación</label>
+         <input type="file" capture="camera" class="form-control" id="exampleFile" name="img">
+        <h6>2) Equipos</h6>
+        <!-- <img src="./img/router.jpg" class="img-thumbnail" alt="Foto ilustrativa del cable de red"> -->
+        <p>
+          Por favor, indíquenos dónde están ubicados los equipos instalados. Indique si estos están cerca o no de otros
+          elementos electrónicos. Tome una foto, como la imagen de arriba.</p>
+        <label for="exampleFile">Por favor tome una foto a continuación</label>
+        <input type="file" capture="camera"  name="img" class="form-control" id="exampleFile">
+        <h6>3) Recorrido</h6>
+        <!-- <img src="./img/terceraimg.jpg" class="img-thumbnail" alt="Foto ilustrativa del cable de red"> -->
+        <p>
+          Visualice el recorrido del cable de red desde el ingreso. Si en algún momento del recorrido este cable pasa
+          por atrás de algún electrodoméstico, por favor, tome una foto. Si el cable se encuentra suelto en algún lado,
+          por favor, tome una foto</p>
+        <!-- aca va checkbox -->
+        <label for="exampleFile">Por favor tome una foto a continuación</label>
+        <input type="file" capture="camera"  name="img" class="form-control" id="exampleFile" aria-describedby="emailHelp">
+
+        <h6>4) Por favor calique su satisfacción con los siguientes aspectos</h6>
+        La amabilidad 
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupSelect01">Opciones</label>
+          <select class="form-select" id="inputGroupSelect01"  name="amabilidad">
+            <option value="1">Malo</option>
+            <option value="2">Regular</option>
+            <option value="3">Bueno</option>
+            <option value="4">Muy Bueno</option>
+          </select>
+        </div>
+
+        <div class="form-floating">
+          <h6>5) A continuacion si lo desea puede dejarnos un comentio sobre su experiencia con este relevamiento</h6>
+          <textarea class="form-control" name="extra" placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 100px"></textarea>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        
+    </form>
+
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+      
+  </div>
+
+
+</body>
+
+</html>
