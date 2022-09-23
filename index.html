@@ -24,7 +24,7 @@
         la ley.</p>
     </header>
 
-    <form id="formulario" name="contacto" method="POST" action="https://formsubmit.co/santiagogonzalez597@gmail.com" enctype="multipart/form-data">
+    <form id="form" name="fileForm" enctype="multipart/form-data" data-netlify="true">
       <div class="mb-3">
         <h6>1) Control de ingreso</h6>
         <!-- <img src="./img/foto1.jpg" class="img-thumbnail" alt="Foto ilustrativa del cable de red"> -->
@@ -32,7 +32,7 @@
           Para comenzar, por favor, visualice el ingreso del cable de red color negro. Tome una foto del mismo como lo
           indica la imagen de arriba.</p>
         <label for="exampleFile">Por favor tome una foto a continuación</label>
-         <input type="file" capture="camera" class="form-control" id="exampleFile" name="imgINGRESO">
+         <input type="file" capture="camera" class="form-control" id="imagen" name="file">
         <h6>2) Equipos</h6>
         <!-- <img src="./img/router.jpg" class="img-thumbnail" alt="Foto ilustrativa del cable de red"> -->
         <p>
@@ -74,10 +74,10 @@
             style="height: 50px"></textarea>
 
         </div>
-        <button type="submit" class="btn btn-primary">ENVIAR</button>
+        <button id="button" type="submit" value="Send Email" class="btn btn-primary">ENVIAR</button>
 
         <input type="hidden" name="_next" value="https://controldecalidad.netlify.app/gracias.html">
-        <input type="hidden" name="_captcha" value="false">
+       
     </form>
 
 
@@ -88,6 +88,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"></script>
+     
       
   </div>
 
